@@ -21,7 +21,7 @@ window.addEventListener('load', ()=> {
             lon = position.coords.longitude;
             //console.log(lat, lon);
             
-            const api = `http://api.weatherstack.com/current?access_key=86c8c19f53086dac7a927fa1f0ba99ca&query=${lat},${lon}`;
+            const api = `http://api.weatherstack.com/current?access_key=ACCESS_KEY&query=${lat},${lon}`;
             
             fetch(api)
                 .then(response => {
